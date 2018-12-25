@@ -1,0 +1,35 @@
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f3f;
+  color: aqua;
+}
+
+
+.alice-carousel__stage-item {
+  padding: 10px !important;
+}
+
+.scrollRight .alice-carousel__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 4em;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(251, 251, 251, 1)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(251, 251, 251, 1) 100%);
+}
+
+.scrollLeft .alice-carousel__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  width: 4em;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(rgba(251, 251, 251, 1)));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(251, 251, 251, 1) 100%);
+  z-index: 1;
+}
